@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80vh min-content 40vw (min-content)[3];
+      grid-template-rows: 80vh -webkit-min-content 40vw repeat(3, -webkit-min-content);
+      grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+  -ms-grid-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] ([coll-start] minmax(min-content, 14rem) [coll-end])[8] [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [coll-start] minmax(-webkit-min-content, 14rem) [coll-end]) [center-end] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [coll-start] minmax(min-content, 14rem) [coll-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.container > * {
+  font-size: 3rem;
+  padding: 40px;
+}
+
+.header {
+  background-color: #c69963;
+  grid-column: full-start / coll-end 6;
+}
+
+.sidebar {
+  background-color: black;
+  grid-column: sidebar-start/sidebar-end;
+  grid-row: 1/-1;
+}
+
+.realtors {
+  background-color: #101d2c;
+  grid-column: coll-start 7 / full-end;
+}
+
+.features {
+  background-color: lightgray;
+  grid-column: center-start/center-end;
+}
+
+.story__pictures {
+  background-color: slategray;
+  grid-column: full-start / coll-end 4;
+}
+
+.story__content {
+  background-color: rgba(194, 18, 18, 0.774);
+  grid-column: coll-start 5/full-end;
+}
+
+.gallary {
+  background-color: #54483A;
+  grid-column: full-start/full-end;
+}
+
+.footer {
+  background-color: #6D5D4B;
+  grid-column: full-start/full-end;
+}
+
+.homes {
+  background-color: orangered;
+  grid-column: center-start/center-end;
+}
+/*# sourceMappingURL=index.css.map */

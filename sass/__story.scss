@@ -1,0 +1,10 @@
+.story {
+    &__pictures {
+        background-color: slategray;
+        grid-column: full-start / coll-end 4;
+    }
+    &__content {
+        background-color: rgba(194, 18, 18, 0.774);
+        grid-column: coll-start 5/full-end;
+    }
+}
